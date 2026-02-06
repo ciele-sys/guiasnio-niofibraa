@@ -1,1 +1,1092 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brsulnet Telecom - Serviços de Comunicação Multimídia</title>
+    <meta name="description" content="Brsulnet Telecom LTDA - Provedor de internet, telefonia e serviços de comunicação multimídia em São Marcos/RS desde 2011. Conexão de qualidade para residências e empresas.">
+    <meta name="keywords" content="provedor de internet, telefonia, comunicação multimídia, São Marcos, Rio Grande do Sul, telecomunicações, wi-fi, fibra óptica">
+    
+    <!-- Informações da empresa para Google -->
+    <meta name="author" content="Brsulnet Telecom LTDA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Schema.org para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Brsulnet Telecom LTDA",
+      "alternateName": "Brsulnet",
+      "url": "https://www.brsulnet.com.br",
+      "logo": "https://www.brsulnet.com.br/images/logo.png",
+      "description": "Provedor de serviços de comunicação multimídia em São Marcos/RS",
+      "foundingDate": "2011-03-03",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Marcos",
+          "addressRegion": "RS",
+          "addressCountry": "BR"
+        }
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Avenida Venâncio Aires, 513, Sala 02",
+        "addressLocality": "São Marcos",
+        "addressRegion": "RS",
+        "postalCode": "95190-000",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-54-3290-0000",
+        "contactType": "Customer Service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese"
+      },
+      "sameAs": []
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset e configurações gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #003d82;
+            --accent-color: #007bff;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --gray-color: #6c757d;
+            --success-color: #28a745;
+            --warning-color: #ffc107;
+            --danger-color: #dc3545;
+            --company-blue: #0056b3;
+            --company-light-blue: #e3f2fd;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header e Navegação */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            color: var(--company-blue);
+            font-size: 28px;
+        }
+        
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+        
+        .logo-text span {
+            color: var(--company-blue);
+        }
+        
+        .logo-subtitle {
+            font-size: 12px;
+            color: var(--gray-color);
+            margin-top: -5px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark-color);
+            font-weight: 600;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--company-blue);
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--dark-color);
+            cursor: pointer;
+        }
+        
+        /* Seção Hero */
+        .hero {
+            background: linear-gradient(135deg, var(--company-blue), var(--secondary-color));
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" fill="%23ffffff"/></svg>');
+            background-size: 100% 100px;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+        
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--company-blue);
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            background-color: var(--company-light-blue);
+        }
+        
+        /* Seção de Serviços */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: var(--gray-color);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid var(--company-blue);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            background-color: rgba(0, 86, 179, 0.1);
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .service-icon i {
+            font-size: 30px;
+            color: var(--company-blue);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark-color);
+        }
+        
+        .service-card p {
+            color: var(--gray-color);
+            margin-bottom: 20px;
+        }
+        
+        /* Seção Sobre */
+        .about {
+            padding: 80px 0;
+            background-color: var(--company-light-blue);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--gray-color);
+        }
+        
+        .company-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .info-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .info-item h4 {
+            color: var(--company-blue);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        /* Seção Cobertura */
+        .coverage {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .coverage-map {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+            border: 2px dashed var(--company-blue);
+        }
+        
+        .coverage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .coverage-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background-color: var(--company-light-blue);
+            border-radius: 8px;
+        }
+        
+        .coverage-item i {
+            color: var(--company-blue);
+            font-size: 24px;
+        }
+        
+        /* Seção Contato */
+        .contact {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+        
+        .contact-info p {
+            margin-bottom: 30px;
+            color: var(--gray-color);
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .contact-detail i {
+            color: var(--company-blue);
+            font-size: 20px;
+            width: 30px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background-color: var(--company-blue);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo span {
+            color: var(--company-blue);
+        }
+        
+        .footer-cnpj {
+            font-size: 14px;
+            opacity: 0.8;
+            margin-bottom: 15px;
+        }
+        
+        .footer-about p {
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        
+        .footer-links h4,
+        .footer-contact h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h4:after,
+        .footer-contact h4:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--company-blue);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--company-blue);
+        }
+        
+        .footer-contact p {
+            margin-bottom: 10px;
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-contact i {
+            color: var(--company-blue);
+            width: 20px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        
+        .footer-bottom a {
+            color: var(--company-blue);
+            text-decoration: none;
+        }
+        
+        /* Páginas Internas */
+        .page-header {
+            background-color: var(--company-blue);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .page-content {
+            padding: 60px 0;
+        }
+        
+        .page-content h2 {
+            font-size: 2rem;
+            margin: 30px 0 15px;
+            color: var(--dark-color);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--company-light-blue);
+        }
+        
+        .page-content h3 {
+            font-size: 1.5rem;
+            margin: 25px 0 10px;
+            color: var(--dark-color);
+        }
+        
+        .page-content p {
+            margin-bottom: 15px;
+            color: var(--gray-color);
+        }
+        
+        .page-content ul, .page-content ol {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        
+        .page-content li {
+            margin-bottom: 8px;
+            color: var(--gray-color);
+        }
+        
+        .legal-info {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid var(--company-blue);
+        }
+        
+        .legal-info h3 {
+            color: var(--company-blue);
+            margin-bottom: 15px;
+        }
+        
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .info-table th, .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .info-table th {
+            background-color: var(--company-light-blue);
+            color: var(--dark-color);
+            font-weight: 600;
+        }
+        
+        .info-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.3rem;
+            }
+            
+            .about-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            nav {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                padding: 20px;
+                box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-100%);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s;
+            }
+            
+            nav.active {
+                transform: translateY(0);
+                opacity: 1;
+            visibility: visible;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .company-info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero {
+                padding: 60px 0;
+            }
+            
+            .services, .about, .contact, .coverage {
+                padding: 60px 0;
+            }
+            
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Cookie Consent Banner */
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--dark-color);
+            color: white;
+            padding: 20px;
+            z-index: 9999;
+            display: none;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cookie-consent.active {
+            display: block;
+        }
+        
+        .cookie-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .cookie-text {
+            flex: 1;
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        
+        .cookie-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .cookie-btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        
+        .cookie-accept {
+            background-color: var(--company-blue);
+            color: white;
+        }
+        
+        .cookie-decline {
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+        }
+        
+        /* Loading */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
+        
+        .loading.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid var(--company-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Badge de Segurança */
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--success-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        /* WhatsApp Flutuante */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
 
+    <!-- WhatsApp Flutuante -->
+    <a href="https://wa.me/555432900000?text=Olá! Gostaria de saber mais sobre os planos da Brsulnet" class="whatsapp-float" target="_blank" id="whatsappFloat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <p>Este site usa cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa <a href="politica-privacidade.html" style="color: var(--company-blue);">Política de Privacidade</a>.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button class="cookie-btn cookie-decline" id="declineCookies">Recusar</button>
+                <button class="cookie-btn cookie-accept" id="acceptCookies">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header/Navegação -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-satellite-dish"></i>
+                </div>
+                <div>
+                    <div class="logo-text">Brsul<span>net</span></div>
+                    <div class="logo-subtitle">Telecom LTDA</div>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="cobertura.html">Cobertura</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal (Home) -->
+    <main id="mainContent">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Internet Rápida e Confiável para São Marcos e Região</h1>
+                <p>Há mais de 14 anos conectando residências e empresas com a melhor tecnologia em telecomunicações. Qualidade e estabilidade que você pode confiar.</p>
+                <a href="contato.html" class="cta-button">Contrate Agora</a>
+                <div class="security-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>CNPJ: 13.338.689/0001-00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços Section -->
+        <section class="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossos Serviços</h2>
+                    <p>Soluções completas em telecomunicações para atender todas as suas necessidades</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Internet Banda Larga</h3>
+                        <p>Internet de alta velocidade com tecnologia de ponta para residências e empresas. Planos adaptados às suas necessidades.</p>
+                        <a href="servicos.html#internet">Ver Planos →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Telefonia Fixa e VOIP</h3>
+                        <p>Comunicação clara e estável com serviços de telefonia fixa e VOIP para sua empresa ou residência.</p>
+                        <a href="servicos.html#telefonia">Saiba mais →</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tv"></i>
+                        </div>
+                        <h3>TV por Assinatura</h3>
+                        <p>Entretenimento de qualidade com os melhores canais através de tecnologia por cabo e satélite.</p>
+                        <a href="servicos.html#tv">Ver Pacotes →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Quem Somos</h2>
+                        <p>A <strong>Brsulnet Telecom LTDA</strong> é uma empresa sólida e estabelecida no mercado de telecomunicações desde 2011. Com sede em São Marcos/RS, atuamos como provedor de serviços de comunicação multimídia, oferecendo soluções completas em internet, telefonia e TV por assinatura.</p>
+                        <p>Nosso compromisso é fornecer conectividade de qualidade, suporte técnico especializado e um atendimento personalizado para cada cliente.</p>
+                        
+                        <div class="company-info-grid">
+                            <div class="info-item">
+                                <h4><i class="fas fa-calendar-alt"></i> Fundação</h4>
+                                <p>03 de Março de 2011</p>
+                            </div>
+                            <div class="info-item">
+                                <h4><i class="fas fa-map-marker-alt"></i> Localização</h4>
+                                <p>São Marcos - RS</p>
+                            </div>
+                            <div class="info-item">
+                                <h4><i class="fas fa-users"></i> Porte</h4>
+                                <p>Capital Social: R$ 11.348.816,00</p>
+                            </div>
+                            <div class="info-item">
+                                <h4><i class="fas fa-check-circle"></i> Situação</h4>
+                                <p>Ativa desde 03/03/2011</p>
+                            </div>
+                        </div>
+                        
+                        <a href="quem-somos.html" class="cta-button">Conheça Nossa História</a>
+                    </div>
+                    <div class="about-image">
+                        <!-- Imagem representativa da empresa -->
+                        <div style="width:100%; height:400px; background: linear-gradient(135deg, var(--company-blue), var(--secondary-color)); display:flex; align-items:center; justify-content:center; color: white; flex-direction: column; padding: 30px;">
+                            <i class="fas fa-building" style="font-size: 80px; margin-bottom: 20px;"></i>
+                            <h3 style="color: white; margin-bottom: 10px;">Brsulnet Telecom LTDA</h3>
+                            <p style="text-align: center; color: rgba(255,255,255,0.9);">Sede Própria em São Marcos/RS</p>
+                            <p style="text-align: center; color: rgba(255,255,255,0.9); margin-top: 10px;">Av. Venâncio Aires, 513 - Sala 02<br>Centro - São Marcos/RS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cobertura Section -->
+        <section class="coverage">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Área de Cobertura</h2>
+                    <p>Atendemos São Marcos e regiões próximas com a melhor infraestrutura de telecomunicações</p>
+                </div>
+                
+                <div class="coverage-map">
+                    <i class="fas fa-map-marked-alt" style="font-size: 50px; color: var(--company-blue); margin-bottom: 20px;"></i>
+                    <h3 style="margin-bottom: 15px;">Cobertura em São Marcos e Região</h3>
+                    <p>Nossa infraestrutura abrange toda a cidade de São Marcos e estamos constantemente expandindo para atender novas áreas.</p>
+                    
+                    <div class="coverage-list">
+                        <div class="coverage-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>São Marcos - Centro</strong>
+                                <p>Cobertura completa</p>
+                            </div>
+                        </div>
+                        <div class="coverage-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>São Marcos - Bairros</strong>
+                                <p>Expansão em andamento</p>
+                            </div>
+                        </div>
+                        <div class="coverage-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <strong>Região Metropolitana</strong>
+                                <p>Consulte disponibilidade</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section class="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Entre em Contato</h2>
+                    <p>Tire suas dúvidas, solicite um orçamento ou agende uma instalação</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Fale Conosco</h3>
+                        <p>Estamos prontos para atender você com a melhor solução em telecomunicações.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Endereço Comercial</strong>
+                                    <p>Av. Venâncio Aires, 513, Sala 02<br>Centro - São Marcos/RS<br>CEP: 95190-000</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <strong>Telefone</strong>
+                                    <p>(54) 3290-0000</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>E-mail</strong>
+                                    <p>contato@brsulnet.com.br</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Horário de Atendimento</strong>
+                                    <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="color: var(--company-blue); margin-right: 15px; font-size: 20px;"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <input type="text" placeholder="Seu nome completo" required>
+                            <input type="email" placeholder="Seu e-mail" required>
+                            <input type="tel" placeholder="Se
